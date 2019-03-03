@@ -1,0 +1,43 @@
+{
+  "name": "functions",
+  "scripts": {
+    "serve": "npm run build && firebase serve --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jellysquider/"
+  },
+  "keywords": [
+    "Sammy",
+    "Lab Assistant",
+    "Digital Assisant",
+    "BME Class",
+    "UC Sant Cruz"
+  ],
+  "main": "lib/index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "firebase-admin": "~5.12.1",
+    "firebase-functions": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.1",
+    "@types/errorhandler": "0.0.32",
+    "@types/es6-shim": "^0.31.37",
+    "@types/express": "^4.16.0"
+  },
+  "author": "Gabriela Medvetska",
+  "bugs": {
+    "url": "https://github.com/jellysquider/"
+  },
+  "homepage": "https://sammy-the-lab-assistant.firebaseapp.com",
+  "private": true
+}
